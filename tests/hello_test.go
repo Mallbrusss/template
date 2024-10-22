@@ -7,7 +7,7 @@ import (
 
 func TestHelloWorld(t *testing.T) {
 	got := internal.HelloWorld()
-	want := "Hello, world"
+	want := "Hello, world!"
 
 	if got != want {
 		t.Errorf("got %s, want %s", got, want)
