@@ -1,9 +1,9 @@
-FROM golang:1.23.0-alpine
+FROM golang:1.23.1
 
 WORKDIR /app
 
 COPY . .
 
-RUN go build -o /hello-world-app
+RUN go build -o template ./src
 
-CMD [ "/hello-world-app" ]
+CMD [ "./template" ]
