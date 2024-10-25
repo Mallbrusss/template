@@ -36,7 +36,7 @@ jobs:
             sleep 10
 
         - name: Install k6
-          run: sudo apt install -y k6
+          run: sudo snap install -y k6
 
         - name: Run k6 load test
           run: k6 run load_tests/hello_load_test.js
