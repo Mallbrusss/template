@@ -37,5 +37,5 @@ jobs:
 
         - name: Stop and remove Docker container
           run: |
-            docker stop my-template-app-container
-            docker rm my-template-app-container
+            docker stop template-container
+            docker rm template-container
